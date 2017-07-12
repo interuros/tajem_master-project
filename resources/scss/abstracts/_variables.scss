@@ -1,0 +1,22 @@
+$header-gradient-dark: rgba(9,5,47,0.9);
+$header-gradient-light: rgba(49,19,94,0.75);
+$header-blue-primary: #4aceef;
+$header-text-color: #fff;
+
+
+$background-overlay: linear-gradient(to right, $header-gradient-dark, $header-gradient-light);
+
+
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Playfair Display', serif;
+
+$font-weight-thin: 100;
+$font-weight-black: 900;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+
+$header-logo-font-size: 30px;
+$main-nav-list-font-size: 13px;
+$header-title-font-size: 30px;
+$header-info-font-size: 17px;
+$header-button-font-size: 13px;

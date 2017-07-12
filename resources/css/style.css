@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:100,300,400,500,700,900");
+/*--------------------------------------------------*/
+/*--HEADER--*/
+header {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.9), rgba(49, 19, 94, 0.75)), url(../scss/components/img/header.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  header > .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 940px; }
+  .main-nav__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 14px;
+    text-decoration: none; }
+    .main-nav__logo h2 {
+      margin-left: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-size: 30px;
+      color: #4aceef; }
+  .main-nav__menu {
+    list-style: none;
+    margin-top: 28px; }
+    .main-nav__menu__items {
+      display: inline-block;
+      margin-left: 25px; }
+      .main-nav__menu__items:first-of-type {
+        margin: 0; }
+      .main-nav__menu__items a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: .3s; }
+        .main-nav__menu__items a:hover {
+          color: #4aceef; }
+
+.header-title {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 30px;
+  padding-bottom: 40px;
+  margin: 180px 0 40px 0;
+  position: relative; }
+  .header-title:after {
+    content: "";
+    width: 55px;
+    height: 3px;
+    margin: 0 auto 0 auto;
+    background: #4aceef;
+    position: absolute;
+    top: 100%;
+    left: 207px; }
+
+.header-info {
+  text-align: center;
+  width: 780px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 80px; }
+
+.learn-more-button {
+  text-decoration: none;
+  color: #4aceef;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 7px;
+  transition: .3s, background-color 0s;
+  border: 2px solid #4aceef; }
+  .learn-more-button:hover {
+    background-color: #4aceef;
+    color: #fff;
+    transform: scale(1.1); }

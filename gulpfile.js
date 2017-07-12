@@ -2,13 +2,13 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function(){
-    return gulp.src('./scss/*.scss')
+    return gulp.src('resources/scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('resources/css/'));
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./scss/*.scss', ['sass']);
+    gulp.watch('resources/scss/*.scss', ['sass']);
 });
 
 gulp.task('default', ['sass', 'watch']);

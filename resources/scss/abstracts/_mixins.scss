@@ -1,0 +1,21 @@
+@mixin flex-box($display:flex, $justify-content:flex-start, $align-items: flex-start,$flex-direction:row, $flex-wrap:nowrap){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin background($attachment:fixed,$size:cover,$position:center,$repeat:no-repeat){
+    background-attachment: $attachment;
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}
+@mixin margin($top,$right,$bottom,$left){
+    margin: $top $right $bottom $left;
+}
+
+@mixin border($width, $style, $color){
+    border: $width $style $color;
+}
