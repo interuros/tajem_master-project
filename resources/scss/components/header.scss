@@ -12,7 +12,7 @@ header{
 
 .main-nav{
     @include flex-box($justify-content:space-between);
-    width: 940px;
+    width: 100%;
 
     &__logo{
         @include flex-box($align-items:center);
@@ -23,16 +23,29 @@ header{
             font-family: $font-family-primary;
             font-weight: $font-weight-thin;
             font-size: $header-logo-font-size;
-            color: $header-blue-primary;
+            color: $blue-primary;
         }
+
+        @media screen and (max-width: 800px){
+            transform: scale(0.7);
+         }
     }
 
     &__menu{
         list-style: none;
         margin-top: 28px;
+
+        @media screen and (max-width: 970px){
+                margin-right: 15px;
+        }
+
         &__items{
             display: inline-block;
             margin-left: 25px;
+
+            @media screen and (max-width: 970px){
+                margin-left: 15px;
+            }
 
             &:first-of-type{
                 margin: 0;
@@ -46,7 +59,7 @@ header{
                 cursor: pointer;
                 transition: .3s;
                 &:hover{
-                    color: $header-blue-primary;
+                    color: $blue-primary;
                 }
             }
         }
@@ -54,49 +67,40 @@ header{
 }
 
 .header-title{
-    color: $header-text-color;
+    color: $header-title-color;
     font-family: $font-family-secondary;
     font-weight: $font-weight-black;
     font-size: $header-title-font-size;
-    padding-bottom: 40px;
-    @include margin(180px, 0, 40px, 0);
+    text-align: center;
+    @include margin(180px, 0, 27px, 0);
     position: relative;
-    
-    &:after{
-        content: "";
-        width: 55px;
-        height: 3px;
-        @include margin(0, auto, 0, auto);
-        background: $header-blue-primary;
-        position: absolute;
-        top: 100%;
-        left: 207px;
+
+    @media screen and (max-width: 510px){
+        font-size: $header-title-break-font-size;
+        margin-top: 70px;
     }
+}
+
+.line{
+    margin-bottom: 27px;
 }
 
 .header-info{
     text-align: center;
-    width: 780px;
+    width: 90%;
     color: $header-text-color;
     font-family: $font-family-primary;
     font-size: $header-info-font-size;
     font-weight: $font-weight-light;
     line-height: 150%;
-    margin-bottom: 80px;
+    margin-bottom: 55px;
+
+    @media screen and (max-width: 510px){
+        font-size: $header-info-break-font-size;
+    }
 }
 
 .learn-more-button{
-    text-decoration: none;
-    color: $header-blue-primary;
-    font-size: $header-button-font-size;
-    font-weight: $font-weight-regular;
-    padding: 7px;
-    transition: .3s, background-color 0s;
-    @include border(2px, solid, $header-blue-primary);
-
-   &:hover{
-       background-color: $header-blue-primary;
-       color: $header-text-color;
-       transform: scale(1.1);
-   }
+    margin-bottom: 55px;
 }
+

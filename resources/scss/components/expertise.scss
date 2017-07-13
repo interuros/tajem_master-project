@@ -1,0 +1,75 @@
+/*--------------------------------------------------*/
+/*--EXPERTISE--*/
+
+.expertise{
+    text-align: center;
+    height: 755px;
+
+    &__title{
+      margin-top: 65px;  
+
+      & > h2{
+          margin-bottom: 15px;
+      }
+
+      & > p{
+          margin-bottom: 15px;
+          color: $expertise-paragraph-color;
+          font-family: $font-family-secondary;
+          font-weight: $font-weight-regular;
+          font-size: $expertise-paragraph-font-size;
+      }
+
+      .line{
+         margin-bottom: 70px;
+      }
+    }
+
+    &__services{
+        list-style: none;
+        
+        
+        @media screen and (min-width:800px){
+            @include flex-box($flex-wrap: wrap,$justify-content: space-around);
+        }
+
+        .big{
+            flex-basis: 100%;
+            margin-bottom: 35px;
+            @media screen and (max-width:800px){
+                display: none
+            }   
+        }
+
+        &__item{
+            flex-basis: 30%;
+            margin-bottom: 35px;
+
+            &__icon{
+                margin: 0 auto;
+                margin-bottom: 30px;
+                height: 50px;
+                width: 50px;
+            }
+
+            &__title{
+                font-weight: $font-weight-black;
+                font-size: $expertise-services-font-size;
+                color: $expertise-title-color;
+                margin-bottom: 20px;
+            }
+
+            &__description{
+                color: $expertise-small-paragraph-color;
+                font-weight: $font-weight-light;
+                font-size: $expertise-small-paragraph-font-size;
+                line-height: 150%;
+                text-align: center;
+                @media screen and (max-width:800px){
+                    width: 300px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

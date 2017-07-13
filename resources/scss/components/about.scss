@@ -1,0 +1,108 @@
+/*--------------------------------------------------*/
+/*--ABOUT SECTION--*/
+#about{
+    & > .text{
+
+        @media screen and (min-width:720px){
+            @include flex-box($justify-content:space-between);
+            margin-bottom: 70px;
+        }
+        & > *{
+            margin-top: 60px;
+        }
+    }
+}
+
+.logo-big{
+    margin-left: 60px;
+
+        @media screen and (max-width:861px){
+            transform: scale(0.7);
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:720px){
+            display: none;
+        }
+}
+
+.story{
+    @include flex-box($flex-direction:column);
+    width: 540px;
+
+    @media screen and (max-width:720px){
+            width: 90%;
+            margin: 20px auto 0 auto;
+    }
+
+    &__title{
+        margin-bottom: 27px;
+    }
+
+    & > p{
+        color: $story-paragraph-color;
+        font-size: $story-paragraph-font-size;
+        font-family: $font-family-primary;
+        font-weight: $font-weight-light;
+        line-height: 150%;
+        margin-bottom: 27px;
+
+        @media screen and (max-width:560px){
+            font-size: $story-paragraph-break-font-size;
+            text-align: justify;
+        }
+
+    }
+
+}
+
+.video{
+    background: $background-overlay, url(../scss/components/img/about_video.png);
+    @include background;
+    
+
+    & > .row{
+        @include flex-box($justify-content:center, $align-items:center);
+        height: 550px;
+
+        @media screen and (max-width:480px){
+            height: 300px;
+        }
+
+        & .play-button{
+            width: 90px;
+            height: 90px;
+            @include border(2px, solid, $about-play-buton-color);
+            border-radius: 100%;
+            cursor: pointer;
+            transition: .3s;
+            position: relative;
+            @media screen and (max-width:480px){
+                transform: scale(0.8);
+            }
+
+            &:hover{
+                border-color: $blue-primary;
+                
+                & > .filled{
+                    opacity: 1;
+                    color: $blue-primary;
+                }
+            }
+
+            & > i{
+                position: absolute;
+                color: $about-play-buton-color;
+                font-size: $about-play-font-size;
+                top: 6px;
+                left: 30px;
+                
+                &.filled{
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+

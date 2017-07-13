@@ -1,8 +1,17 @@
 $header-gradient-dark: rgba(9,5,47,0.9);
 $header-gradient-light: rgba(49,19,94,0.75);
-$header-blue-primary: #4aceef;
+$blue-primary: #4aceef;
 $header-text-color: #fff;
-
+$header-title-color: #fff;
+$title-color: rgb(65,61,75);
+$text-color: rgb(113,110,120);
+$about-play-buton-color: white;
+$grey-line-color: rgb(165, 169, 175);
+$expertise-paragraph-color: rgb(165, 169, 175);
+$expertise-small-paragraph-color: rgb(165, 169, 175);
+$expertise-title-color: rgb(113,110,120);
+$grey-light-line-color: rgb(222, 224, 226);
+$story-paragraph-color: rgb(65,61,75);
 
 $background-overlay: linear-gradient(to right, $header-gradient-dark, $header-gradient-light);
 
@@ -14,9 +23,19 @@ $font-weight-thin: 100;
 $font-weight-black: 900;
 $font-weight-light: 300;
 $font-weight-regular: 400;
+$font-weight-bold: 700;
 
 $header-logo-font-size: 30px;
 $main-nav-list-font-size: 13px;
 $header-title-font-size: 30px;
+$header-title-break-font-size: 18px;
 $header-info-font-size: 17px;
-$header-button-font-size: 13px;
+$header-info-break-font-size: 12px;
+$learn-button-font-size: 13px;
+$title-font-size: 20px;
+$story-paragraph-font-size: 15px;
+$story-paragraph-break-font-size: 13px;
+$about-play-font-size: 65px;
+$expertise-paragraph-font-size: 15px;
+$expertise-small-paragraph-font-size: 13px;
+$expertise-services-font-size:15px; 
