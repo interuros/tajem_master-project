@@ -1,0 +1,112 @@
+/*--------------------------------------------------*/
+/*--TEAMS--*/
+
+#teams{
+    background-image: $background-overlay, url(img/teams-background.png);
+    @include background;
+}
+
+
+.team{
+    @include flex-box($flex-direction:column,$align-items:center);
+    
+    &__title{
+        margin-top: 65px;
+        text-align: center;
+        
+        h2{
+            color: $teams-title-color;
+            word-spacing: 5px;
+            margin-bottom: 15px;
+
+            @media screen and (max-width:420px){
+                font-size: 18px;
+            }
+        }
+        p{
+           color: $teams-description-color; 
+           font-size: $teams-description-font-size;
+           font-weight: $font-weight-regular;
+           font-family: $font-family-secondary;
+           margin-bottom: 15px;
+
+           @media screen and (max-width:420px){
+                font-size: 13px;
+            }
+        }
+        div{
+            height: 1px;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__members{
+
+        @media screen and (min-width:600px){
+           @include flex-box($justify-content:space-between,$flex-wrap:wrap);  
+        }  
+        @media screen and (max-width:960px){
+            justify-content: space-around;
+           }
+        
+        width: 100%;
+
+        &__member{
+            text-align: center;
+            flex-basis: 23.5%;
+            border-bottom: 1px solid $grey-light-line-color;
+            margin-bottom: 70px;
+
+            @media screen and (max-width:960px){
+                flex-basis: 35%;
+            } 
+
+            @media screen and (max-width:600px){
+                width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            & img{
+                width: 100%;
+                height: auto;
+                mix-blend-mode: difference;
+                margin-bottom: 15px;
+            }
+
+            & .name{
+                color: $teams-members-name-color;
+                font-size: $teams-members-name-font-size;
+                font-weight: $font-weight-black;
+                word-spacing: 3px;
+                margin-bottom: 4px;
+            }
+
+            & .proffesion{
+                color: $teams-members-proffesion-color;
+                font-size: $teams-members-proffesion-font-size;
+                font-weight: $font-weight-light;
+                word-spacing: 3px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__paragraph{
+        color: $team-paragraph-color;
+        font-size: $teams-paragraph-font-size;
+        font-weight: $font-weight-light;
+        word-spacing: 3px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width:420px){
+            font-size: 14px;
+            word-spacing: 0;
+        }
+
+    }
+    
+    & a{
+        margin-bottom: 80px;
+    }
+}

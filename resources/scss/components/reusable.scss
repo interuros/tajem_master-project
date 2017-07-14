@@ -40,11 +40,11 @@ button{
     color: $blue-primary;
     font-size: $learn-button-font-size;
     font-weight: $font-weight-regular;
-    padding: 7px;
+    padding: 9px 12px;
     transition: .3s, background-color 0s;
     @include border(2px, solid, $blue-primary);
 
-   &:hover{
+&:hover,&:active{
        background-color: $blue-primary;
        color: $header-text-color;
        transform: scale(1.1);

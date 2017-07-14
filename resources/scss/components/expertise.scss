@@ -3,10 +3,10 @@
 
 .expertise{
     text-align: center;
-    height: 755px;
+    margin-bottom: 80px;
 
     &__title{
-      margin-top: 65px;  
+      padding-top: 65px;  
 
       & > h2{
           margin-bottom: 15px;
@@ -29,7 +29,7 @@
         list-style: none;
         
         
-        @media screen and (min-width:800px){
+        @media screen and (min-width:600px){
             @include flex-box($flex-wrap: wrap,$justify-content: space-around);
         }
 
@@ -44,6 +44,10 @@
         &__item{
             flex-basis: 30%;
             margin-bottom: 35px;
+
+            @media screen and (max-width:600px){
+                flex-basis: 45%;
+            }
 
             &__icon{
                 margin: 0 auto;
