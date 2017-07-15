@@ -28,6 +28,10 @@
     font-size: $title-font-size;
     font-family: $font-family-secondary;
     font-weight: $font-weight-bold;
+
+    @media screen and (max-width:464px){
+            transform: scale(0.8);
+    }
 }
 
 button{
