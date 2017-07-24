@@ -241,6 +241,8 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 550px; }
+    .video > .row > iframe {
+      display: none; }
     @media screen and (max-width: 480px) {
       .video > .row {
         height: 300px; } }
